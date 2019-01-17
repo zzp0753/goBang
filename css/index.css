@@ -3,10 +3,16 @@
 *{margin:0;padding:0;border:none}html{background-image:url(about:blank);background-attachment:fixed}h1,h2,h3,h4,h5,h6{font-size:100%}li{list-style:none}img{border:none;vertical-align:top}table{border-collapse:collapse;width:100%;text-align: center;}body{font:normal 14px/1.6 "Microsoft YaHei",Arial,Helvetica,sans-serif;-webkit-text-size-adjust:none;background:#fffdf8;color:#000;min-width:1200px}.clfix:after,.clfix:before{content:".";visibility:hidden;clear:both;display:block;height:0}.clfix{*zoom:1}.hide{display:none}a{outline:0; text-decoration: none; cursor: pointer;}input,textarea{border:none;outline: none;background:none}.hide{ display: none;}
 
 
-.chess-board{position: fixed;top: 0;bottom: 0;left: 0;right: 0;width: 640px;height: 640px;background: url(../img/bg.png) center center no-repeat;margin: auto;}
-.chess-board .chess{width: 30px;height: 30px;float: left;border-radius: 50%;margin: 5px;box-sizing: border-box;}
+.chess-board{position: fixed;top: -100px;bottom: 0;left: 0;right: 0;width: 640px;height: 640px;background: url(../img/bg.png) center center no-repeat;margin: auto;}
+.chess-board .chess{width: 30px;height: 30px;float: left;border-radius: 50%;margin: 5px;box-sizing: border-box;cursor: pointer;}
 
 /*.chess-board .chess:nth-child(odd){background: #000;}
 .chess-board .chess:nth-child(even){background: #eee;border: 1px solid #000;}*/
 .chess-board .chess.b{background: #000;}
 .chess-board .chess.w{background: #eee;border: 1px solid #000;}
+
+.btn-box{position: fixed;left: 0;right: 0;margin: auto;bottom: 130px;width: 600px;height: 50px;}
+
+.btn-box .btn{float: left;width: 150px;height: 50px;line-height: 50px;text-align: center;background: #dcad68;margin-right: 75px;font-size: 16px;cursor: pointer;box-sizing: border-box;border-radius: 5px;color: #221;}
+.btn-box .btn:hover{background: #ce9644;}
+.btn-box .btn:last-child{margin-right: 0;}
